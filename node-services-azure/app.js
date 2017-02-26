@@ -20,7 +20,7 @@ app.use(cors({
   allowMethods: ['GET', 'POST']
 }))
 
-// Custom 401 -- Wrap erros so we don't expose internal errors to users where possible
+// Custom 401 -- Wrap errors so we don't expose internal errors to users where possible
 app.use(function * custom401 (next) {
   try {
     yield next
