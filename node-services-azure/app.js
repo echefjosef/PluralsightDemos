@@ -28,6 +28,7 @@ app.use(function * custom401 (next) {
     if (err.status === 401) {
       this.status = 401
       this.body = 'An Error has occured in the system.  If this persists, please contact Support.'
+      
       console.log('Error in service: ' + err)
     } else {
       // For non-web transport failures, rely on Koa error reporting
