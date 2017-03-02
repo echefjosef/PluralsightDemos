@@ -10,6 +10,7 @@ exports.get = function () {
 
 exports.getById = function (id) {
   return new Promise(function (resolve, reject) {
+    // Retrieve funciton
     resolve(_data[id])
   })
 }
